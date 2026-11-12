@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; }
+  body {
+    @apply bg-ink font-sans text-parchment antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection { @apply bg-bronze text-ink; }
+  .font-display { font-variant-numeric: lining-nums; }
+  :focus-visible { @apply outline outline-2 outline-offset-4 outline-bronze; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+  }
+}
+
+@layer components {
+  .container-site { @apply mx-auto w-full max-w-site px-5 sm:px-8 lg:px-16 2xl:px-24; }
+  .eyebrow {
+    @apply flex items-center gap-4 font-sans text-[0.7rem] font-semibold uppercase tracking-eyebrow text-bronze;
+  }
+  .eyebrow::after { content: ''; @apply h-px w-14 bg-bronze/50; }
+  .eyebrow-center { @apply justify-center; }
+  .eyebrow-center::before { content: ''; @apply h-px w-14 bg-bronze/50; }
+  .heading-xl { @apply font-display text-[2.75rem] font-semibold leading-[1.02] tracking-[-0.01em] sm:text-6xl lg:text-[5.25rem]; }
+  .heading-lg { @apply font-display text-4xl font-semibold leading-[1.05] sm:text-5xl lg:text-[3.6rem]; }
+  .body-lg { @apply text-base leading-relaxed text-parchment-muted sm:text-lg; }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-3 px-7 py-4 text-[0.72rem] font-bold uppercase tracking-[0.2em] transition-all duration-300;
+  }
+  .btn-primary { @apply btn relative isolate overflow-hidden bg-bronze text-ink hover:bg-bronze-light; }
+  /* Soft light sweep across primary buttons on hover */
+  .btn-primary::after {
+    content: ''; @apply pointer-events-none absolute inset-0 -z-10;
+    background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, 0.45) 50%, transparent 70%);
+    transform: translateX(-120%); transition: transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .btn-primary:hover::after { transform: translateX(120%); }
+  @media (prefers-reduced-motion: reduce) { .btn-primary::after { display: none; } }
+  .btn-outline { @apply btn border border-parchment/30 text-parchment hover:border-bronze hover:text-bronze; }
+
+  /* Gold corner brackets, inspired by the reference's framed photograph */
+  .frame-corners { @apply relative; }
+  .frame-corners::before, .frame-corners::after {
+    content: ''; @apply pointer-events-none absolute z-10 h-16 w-16 border-bronze sm:h-20 sm:w-20;
+  }
+  .frame-corners::before { @apply -left-3 -top-3 border-l-2 border-t-2 sm:-left-4 sm:-top-4; }
+  .frame-corners::after { @apply -bottom-3 -right-3 border-b-2 border-r-2 sm:-bottom-4 sm:-right-4; }
+
+  /* Warm copper glow at the section edge, echoing the reference */
+  .copper-glow { background-image: radial-gradient(ellipse 60% 90% at 100% 50%, rgba(122, 64, 28, 0.42), transparent 70%); }
+}

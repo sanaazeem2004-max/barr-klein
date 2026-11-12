@@ -1,0 +1,96 @@
+{
+ "desktop": {
+  "scrollW": 1440,
+  "vw": 1440,
+  "overflowing": [],
+  "badImgs": [],
+  "imgCount": 10,
+  "missingTargets": [],
+  "smallTap": [
+   "Skip to content",
+   "ben@barrklein.com",
+   "(202) 595-4671",
+   "steve@barrklein.com",
+   "(202) 804-6676",
+   "(202) 595-4671",
+   "ben@barrklein.com",
+   "(202) 804-6676",
+   "steve@barrklein.com",
+   "Disclaimer",
+   "Back to top"
+  ],
+  "nav": [
+   "About: section top 88px OK",
+   "Practice Areas: section top 88px OK",
+   "Attorneys: section top 88px OK",
+   "Contact: section top 88px OK",
+   "Hero CTA \"Explore Our Practice\": OK",
+   "Hero CTA \"Contact Our Attorneys\": OK"
+  ],
+  "consoleErrors": [],
+  "failedRequests": []
+ },
+ "tablet": {
+  "scrollW": 768,
+  "vw": 768,
+  "overflowing": [],
+  "badImgs": [],
+  "imgCount": 10,
+  "missingTargets": [],
+  "smallTap": [
+   "Skip to content",
+   "ben@barrklein.com",
+   "(202) 595-4671",
+   "steve@barrklein.com",
+   "(202) 804-6676",
+   "(202) 595-4671",
+   "ben@barrklein.com",
+   "(202) 804-6676",
+   "steve@barrklein.com",
+   "Disclaimer",
+   "Back to top"
+  ],
+  "nav": [
+   "Mobile menu -> Attorneys: top 88 OK; menu closed: true",
+   "body overflow after close: \"\""
+  ],
+  "consoleErrors": [],
+  "failedRequests": []
+ },
+ "mobile": {
+  "scrollW": 390,
+  "vw": 390,
+  "overflowing": [],
+  "badImgs": [],
+  "imgCount": 10,
+  "missingTargets": [],
+  "smallTap": [
+   "Skip to content",
+   "ben@barrklein.com",
+   "(202) 595-4671",
+   "steve@barrklein.com",
+   "(202) 804-6676",
+   "(202) 595-4671",
+   "ben@barrklein.com",
+   "(202) 804-6676",
+   "steve@barrklein.com",
+   "Disclaimer",
+   "Back to top"
+  ],
+  "nav": [
+   "Mobile menu -> Attorneys: top 108 OK; menu closed: true",
+   "body overflow after close: \"\""
+  ],
+  "consoleErrors": [],
+  "failedRequests": []
+ },
+ "externalLinks": [
+  "200 https://barrklein.com/free-speech/",
+  "200 https://barrklein.com/campaign-finance/",
+  "200 https://barrklein.com/political-lawsuits/",
+  "200 https://barrklein.com/defamation-defense/",
+  "200 https://barrklein.com/attorney-profiles/",
+  "200 https://barrklein.com/contact/",
+  "200 https://barrklein.com/disclaimer/"
+ ]
+}
